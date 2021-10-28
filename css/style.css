@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* SLIDER*/
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .galeria{
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .item {
+    flex: 0 32%;
+    height: 100px;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    margin-bottom: 28em;
+  }
+
+  .logo{
+    width: 5%;
+    height: auto;
+  }
+
+  .video{
+    text-align: center;
+    margin-top: 6em;
+  }
+
+  
+/* ##Dispositivo = Smartphones de 320px a 479px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .item {
+    flex: 0 32%;
+    height: 100px;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    margin-bottom: 2em;
+    }
+
+    .galeria{
+      margin-top: 1em;
+      
+  
+    }
+
+    .logo{
+      width: 15%;
+      height: auto;
+    }
+
+}
