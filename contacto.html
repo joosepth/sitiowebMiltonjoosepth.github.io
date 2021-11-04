@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio web</title>
+    <title>Sitio Web</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>
 
@@ -31,38 +32,62 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav> <!-- .cd-primary-nav -->
-  </header> <!-- .cd-auto-hide-header -->    
+  </header> <!-- .cd-auto-hide-header -->
 
     
- <!--imagen servicios-->
- <div class="imagen-servicios">
-  <img src="images/slider_.jpg">
-</div>
-<!--imagen servicios-->
 
-<!--Cuerpo texto servicios-->
+    <!--imagen servicios-->
+    <div class="imagen-servicios">
+      <img src="images/slider_.jpg">
+    </div>
+    <!--imagen servicios-->
 
-<div class="cuerpo_servicios">
+    <!--Cuerpo texto servicios-->
 
-  <h1>Quienes Somos</h1>
-  <p>
-  Usamos inteligentemente las herramientas y técnicas que provee el Marketing Digital: web,
-  redes sociales, ecommerce, publicidad en medios digitales, imagen y video, entre otros.
-  Una estrategia de marketing debe estar enfocada al resultado final del proceso comercial:
- La venta, no basta con generar interés si el cliente potencial no compra el producto o servicio.
-  </p> <br>
-  <h1>Publicidad Digital</h1>
-  <P>Por ello nuestro equipo realizará un detallado análisis de su empresa, 
-  sus objetivos y su presencia en Internet. De esta forma planearemos la mejor
-  estrategia digital para su negocio, así como los pasos y recursos necesarios
-  para tomar acción y conseguir las metas trazadas.</P>
-</div>
-<!--finaliza cuerpo servicios-->
+    <div class="cuerpo_servicios">
+
+      <h1>Contáctanos</h1>
+      <p>
+        Podemos hacer de tu proyecto algo novedoso,
+        contamos con las mejores técnicas para lograrlo.
+      </p>
+      
+    </div>
+    <!--finaliza cuerpo servicios-->
+
+    <!--formulario-->
+
+    <div class="formulario">
     
-        
-<!--javascript-->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <form action="../form-result.php" target="_blank">
 
+    <p>Nombre completo <input type="text" name="nombrecompleto"></p><br>
+    <p>Dirección<input type="text" name="dirección"></p><br>
+    <p>Teléfono<input type="text" name="Teléfono"></p><br>
+    <p>email<input type="text" name="email"></p><br>
+    
+      
+    <p>
+      
+          ¿Cómo podemos ayudarte?:<br>
+      
+          <textarea name="mensaje"></textarea>
+      
+    </p>
+      
+    <input type="submit" value="Enviar Mensaje">
+      
+    </form>
+
+</div>
+
+    
+
+     
+      
+     
+    
+    <!--finaliza formulario-->
     
        <!-- .cd-main-content -->
 	
@@ -71,12 +96,14 @@
 	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
 </script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<!--javascript-->
+<script src="js/lightbox.js"></script>
 
 <!--inicia el footer-->
 <div class="contenedor_footer">
   <div class="item_footer">
 
-    <div class="logo_redes"><a href="" class="instagram"><img src="images/logo_instagram_.svg" alt=""></a></div>
+    <div class="logo_redes"><img src="images/logo_instagram_.svg" alt=""></div>
    <h4>@mj_digital1</h4>
    <p>
     El arte digital nos permite obtener resultados increibles, encuentra el 
@@ -86,7 +113,7 @@
 
   <div class="item_footer">
 
-    <div class="logo_redes"><a href="" class="facebook"><img src="images/logo_facebook_.svg" alt=""></a></div>
+    <div class="logo_redes"><img src="images/logo_facebook_.svg" alt=""></div>
     <h4>/mj_digital</h4>
     <p>
      Nuevas tendencias, diseños increibles, ilustraciones originales de
@@ -95,7 +122,7 @@
    </div>
 
    <div class="item_footer">
-    <div class="logo_redes"><a href="" class="whatsapp"><img src="images/logo_youtube_.svg" alt=""></a></div>
+    <div class="logo_redes"><img src="images/logo_youtube_.svg" alt=""></div>
     <h4>MJ Digital</h4>
     <p>
      Encuentra en nuestro canal de youtube tutoriales y contenido sobre nuestro trabajo.
@@ -103,7 +130,7 @@
    </div>
 
    <div class="item_footer">
-    <div class="logo_redes"><a href="" class="youtube"><img src="images/logo_whatsapp_.svg" alt=""></a></div>
+    <div class="logo_redes"><img src="images/logo_whatsapp_.svg" alt=""></div>
     <h4>+57 313 659 88 77</h4>
     <p>
      Atención Online 24/7 los 365 días del años.
